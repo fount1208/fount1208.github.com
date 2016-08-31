@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>飞机</title>
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/showMenu.js"></script>
+<script type="text/javascript" src="script/mouseSelect.js"></script>
+<link href="style/common.css" rel="stylesheet" type="text/css" /><!--整体公共CSS-->
+<link href="style/index.css" rel="stylesheet" type="text/css" /><!--首页CSS-->
+</head>
+
+<body>
+	<!--公共头部开始-->
+    <div class="header">
+    	<div class="h_top">
+        	<div class="h_top_c">
+            	<div class="h_top_c_l left">宏安天城国际飞行学院实现飞行的梦想!</div>
+                <div class="h_top_c_r right">
+                	<a href="#" title="" target="_blank">收藏本站</a> | 
+                    <a href="#" title="" target="_blank">集团微博</a> | 
+                    <a href="#" title="" target="_blank">集团博客</a> | 
+                    <a href="#" title="" target="_blank">联系我们</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="h_top_1">
+        	<div class="h_top_1_c">
+            	<div class="logo">
+                	<a href="#" title=""><img src="images/logo.jpg" alt="" width="262" height="109" /></a>
+                </div>
+                <div class="slong f">北京分公司</div>
+                <!--城市开始-->
+				<div class="city">
+					<ul>
+						<li class="city_l"></li>
+						<li class="city_m">
+							北京
+						</li>
+						<li class="city_r"></li>
+					</ul>
+					<div class="clear"></div>
+					<div class="city_show" style="display:none;">
+						<div class="jiantou"></div>
+						<div class="city_c_bg"></div>
+						<div class="city_c">
+							<ul>
+								<li>
+									<div class="city_c_l left">
+										华北东北：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="北京" title="">北京</a></p>
+										<p><a href="天津" title="">天津</a></p>
+										<p><a href="沈阳" title="">沈阳</a></p>
+										<p><a href="大连" title="">大连</a></p>
+										<p><a href="长春" title="">长春</a></p>
+										<p><a href="哈尔滨" title="">哈尔滨</a></p>
+										<p><a href="石家庄" title="">石家庄</a></p>
+										<p><a href="太原" title="">太原</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										华东地区：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="上海" title="">上海</a></p>
+										<p><a href="杭州" title="">杭州</a></p>
+										<p><a href="南京" title="">南京</a></p>
+										<p><a href="苏州" title="">苏州</a></p>
+										<p><a href="无锡" title="">无锡</a></p>
+										<p><a href="常州" title="">常州</a></p>
+										<p><a href="济南" title="">济南</a></p>
+										<p><a href="厦门" title="">厦门</a></p>
+										<p><a href="宁波" title="">宁波</a></p>
+										<p><a href="福州" title="">福州</a></p>
+										<p><a href="青岛" title="">青岛</a></p>
+										<p><a href="合肥" title="">合肥</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										中部西部：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="武汉" title="">武汉</a></p>
+										<p><a href="郑州" title="">郑州</a></p>
+										<p><a href="长沙" title="">长沙</a></p>
+										<p><a href="南昌" title="">南昌</a></p>
+										<p><a href="成都" title="">成都</a></p>
+										<p><a href="重庆" title="">重庆</a></p>
+										<p><a href="西安" title="">西安</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										华南地区：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="广州" title="">广州</a></p>
+										<p><a href="深圳" title="">深圳</a></p>
+										<p><a href="东莞" title="">东莞</a></p>
+										<p><a href="佛山" title="">佛山</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="#" title="" >更多城市>></a>
+							</div>
+						</div>
+					</div>
+				</div>
+                <script type="text/javascript">
+                	$(".city .city_r").showMenu(".city_show");
+                </script>
+				<!--城市结束-->
+                <div class="weibo"><a href="#" title="" target="_blank"><img src="images/weibo.jpg" alt="" width="132" height="53"/></a></div>
+                <div class="tel"><img src="images/tel.jpg" alt="" width="259" height="53"/></div>
+                <div class="zxyd"><a href="#" title="" target="_blank"><img src="images/zxyd.jpg" /></a></div>
+                <div class="zxzx"><a href="#" title="" target="_blank"><img src="images/zxzx.jpg" /></a></div>
+            </div>
+        </div>
+        <div class="nav f">
+        	<div class="nav_c">
+            	<ul>
+                	<li class="hover"><a href="#" title="">首页</a></li><!--加hover选中-->
+                    <li><a href="#" title="">HATCH简介</a></li>
+                    <li><a href="#" title="">航校列表</a></li>
+                    <li><a href="#" title="">培训课程</a></li>
+                    <li><a href="#" title="">招商服务</a></li>
+                    <li><a href="#" title="">在线报名</a></li>
+                    <li><a href="#" title="">招商加盟</a></li>
+                    <li><a href="#" title="">联系方式</a></li>
+                    <li><a href="#" title="">新闻</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--公共头部结束-->
+    <!--焦点区开始-->
+    <div class="focus">
+    	<div class="focus_c">
+        	<p style="background:url(images/pic/pic_1.jpg) no-repeat top center;"><a href="#" title="" target="_blank"></a></p>
+            <p style="background:url(images/pic/pic_1.jpg) no-repeat top center;"><a href="#" title="" target="_blank"></a></p>
+            <p style="background:url(images/pic/pic_1.jpg) no-repeat top center;"><a href="#" title="" target="_blank"></a></p>
+            <p style="background:url(images/pic/pic_1.jpg) no-repeat top center;"><a href="#" title="" target="_blank"></a></p>
+        </div>
+        <div class="focus_m">
+        	<div class="focus_m_c">
+            	<span class="hover"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+	// JavaScript Document
+	$(function(){
+		var _sw = 0;
+		var _menu = $(".focus_m_c span");
+		var _tag = $(".focus_c p");
+		_menu.click(function(){
+			_sw = _menu.index(this);
+			//alert(_sw);
+			myShow(_sw);
+		});
+		function myShow(i){
+			_menu.eq(i).addClass("hover").siblings("span").removeClass("hover");
+			_tag.eq(i).stop(true,true).fadeIn(600).siblings(".focus_c p").fadeOut(600);
+		}
+		//滑入停止动画，滑出开始动画
+		$(".focus_c p").hover(function(){
+			if(myTime){
+			   clearInterval(myTime);
+			}
+		},function(){
+			myTime = setInterval(function(){
+			  myShow(_sw)
+			  _sw++;
+			  if(_sw > 2){_sw=0;}
+			} , 4500);
+		});
+		//自动开始
+		var myTime = setInterval(function(){
+		   myShow(_sw)
+		   _sw++;
+		   if(_sw > 2){_sw=0;}
+		} , 4500);
+		_menu.eq(0).addClass("hover");
+	});
+
+</script>
+    <!--焦点区结束-->
+    <!--内容区开始-->
+    <div class="container">
+    	<div class="zs_tj">
+        	<div class="zs left">
+            	<h3 class="title"><span class="f">全国独家代理证书</span></h3>
+                <div class="zs_c">
+                	<ul>
+                    	<li>
+                        	<h5 class="f"><a href="#" title="" target="_blank">宏安天城国际飞行学院</a></h5>
+                            <p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="305" height="140" /></a></p>
+                            <p class="style_1">宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                        </li>
+                        <li>
+                        	<h5 class="f"><a href="#" title="" target="_blank">宏安天城国际飞行学院</a></h5>
+                            <p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="305" height="140" /></a></p>
+                            <p class="style_1">宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="tj right">
+            	<h3 class="title"><span class="f">报名条件</span></h3>
+                <div class="tj_c">
+                	<ul>
+                    	<li>
+                        	<h6 class="f">私人飞行驾照</h6>
+                            <p class="clear"></p>
+                            <p>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提至64架此架新飞机的加盟航提...<a href="#" title="" target="_blank">查看详情>></a></p>
+                        </li>
+                        <li>
+                        	<h6 class="f">商业飞行驾照</h6>
+                            <p class="clear"></p>
+                            <p>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提至64架此架新飞机的加盟航提...<a href="#" title="" target="_blank">查看详情>></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="fxy">
+        	<h3 class="title_1"><span class="f">飞行员培训流程</span></h3>
+            <div class="fxy_c">
+            	<div class="lc_pic">
+                	<img src="images/liucheng.jpg" alt="" />
+                    <div class="lc_pic_m_1"></div>
+                    <div class="lc_pic_m_2"></div>
+                    <div class="lc_pic_m_3"></div>
+                    <div class="lc_pic_m_4"></div>
+                    <div class="lc_pic_m_5"></div>
+                    <div class="lc_pic_c_1" style="display:none;">
+                    	资讯面试宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...
+                    </div>
+                    <div class="lc_pic_c_2" style="display:none;">
+                    	保铭体检宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...
+                    </div>
+                    <div class="lc_pic_c_3" style="display:none;">
+                    	语言宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...
+                    </div>
+                    <div class="lc_pic_c_4" style="display:none;">
+                    	出国宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...
+                    </div>
+                    <div class="lc_pic_c_5" style="display:none;">
+                    	学习宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...
+                    </div>
+                    <script type="text/javascript">
+						$(".lc_pic_m_1").showMenu(".lc_pic_c_1");
+						$(".lc_pic_m_2").showMenu(".lc_pic_c_2");
+						$(".lc_pic_m_3").showMenu(".lc_pic_c_3");
+						$(".lc_pic_m_4").showMenu(".lc_pic_c_4");
+						$(".lc_pic_m_5").showMenu(".lc_pic_c_5");
+					</script>
+                </div>
+                <p class="bm_btn"><a href="#" title="" target="_blank"><img src="images/bm_btn.jpg" alt="" /></a></p>
+            </div>
+        </div>
+        <div class="xx_cn">
+        	<div class="xx left">
+            	<h3 class="title f"><span>学员风采</span><span class="style_1">校园环境</span></h3>
+                <div class="xx_c">
+                	<ul>
+                    	<li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="xx_c" style="display:none;">
+                	<ul>
+                    	<li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">1宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">1宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">1宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">1宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">1宏安天城国际</a></p>
+                        </li>
+                        <li>
+                        	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_2.jpg" alt="" width="210" height="130" /></a></p>
+                            <p><a href="#" title="" target="_blank">1宏安天城国际</a></p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            	mouseSelect('.xx', '.title span', '', 'style_1', '.xx_c');
+            </script>
+            <div class="cn right">
+            	<h3 class="title"><span class="f">服务承诺</span></h3>
+                <div class="cn_c">
+                	<ul>
+                    	<li>
+                        	<p class="style_1">
+                            	<span class="f"><strong>100%</strong><br/><strong style="font-size:18px;">保证毕业</strong></span><br/>
+                                毕不了业全额退款
+                            </p>
+                            <p class="style_2"><span>说明：</span>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                        </li>
+                        <li>
+                        	<p class="style_1">
+                            	<span class="f"><strong>100%</strong><br/><strong style="font-size:18px;">保证推荐工作</strong></span><br/>
+                                推荐不了全额退款
+                            </p>
+                            <p class="style_2"><span>说明：</span>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="other">
+        	<ul>
+            	<li>
+                	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_4.jpg" alt="" width="290" height="120" /></a></p>
+                    <p class="style_1 f"><a href="#" title="" target="_blank">宏安天城国际飞行学院简介</a></p>
+                    <p class="style_2">宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                    <p class="style_3"><a href="#" title="" target="_blank">更多信息>></a></p>
+                </li>
+                <li>
+                	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_5.jpg" alt="" width="290" height="120" /></a></p>
+                    <p class="style_1 f"><a href="#" title="" target="_blank">飞行员培训内容</a></p>
+                    <p class="style_2">宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                    <p class="style_3"><a href="#" title="" target="_blank">更多信息>></a></p>
+                </li>
+                <li>
+                	<p><a href="#" title="" target="_blank"><img src="images/pic/pic_6.jpg" alt="" width="290" height="120" /></a></p>
+                    <p class="style_1 f"><a href="#" title="" target="_blank">代理招商加盟</a></p>
+                    <p class="style_2">宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                    <p class="style_3"><a href="#" title="" target="_blank">更多信息>></a></p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    	<!--公共友情链接开始-->
+    	<div class="links">
+        	<h3 class="title"><span class="f">友情链接</span></h3>
+            <div class="links_c">
+            	<a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+                <a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+                <a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+            </div>
+        </div>
+        <!--公共友情链接结束-->
+    </div>
+    <!--内容区结束-->
+    <!--公共页脚开始-->
+    <div class="footer">
+    	<div>
+            <a href="#" title="" target="_blank">网站首页</a> | 
+            <a href="#" title="" target="_blank">关于我们</a> | 
+            <a href="#" title="" target="_blank">广告服务</a> | 
+            <a href="#" title="" target="_blank">使用条款</a> | 
+            <a href="#" title="" target="_blank">联系我们</a> | 
+            <a href="#" title="" target="_blank">合作伙伴</a> | 
+            <a href="#" title="" target="_blank">招贤纳士</a> | 
+            <a href="#" title="" target="_blank">用户反馈</a>
+        </div>
+		<div>CopyRight © 2009-2013 宏安天城国际飞行学院</div>
+    </div>
+    <!--公共页脚结束-->
+</body>
+</html>

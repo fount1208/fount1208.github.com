@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none;
+}
+.loginBox{
+    width:280px;
+    height:120px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    border-color: #369;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    padding: 10px;
+}
+.loginBox input{
+    border: 1px solid #399;
+    padding: 5px;
+    margin: 5px;
+}
+.faceBox{
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    top:-93px;
+}
+.faceBox img{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+#wrap{
+    width:500px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    border: 1px solid #000;
+    margin: -250px 0 0 -250px;
+}
+#left{
+    width:400px;
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    background: #ccc;
+}
+#right{
+    width:100px;
+    position: absolute;
+    right:0;
+    top:0;
+    height:100%;
+    background: #fff;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#right ul{}
+#right ul img{
+    vertical-align: middle;
+    display: inline-block;
+    width:20px;
+    float: left;
+    margin: 5px 2px 0 5px;
+}
+#right ul li{
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #000;
+    overflow: hidden;
+}
+#right ul li span{
+    display: inline-block;
+    width:73px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#left_top{
+    width:100%;
+    height:300px;
+    background: #ffe38b;
+    position: absolute;
+    left: 0;
+    top:0;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#left_top dl{
+    border-bottom: 1px dashed #000;
+    padding: 10px;
+}
+#left_bottom{
+    width:100%;
+    height:200px;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+#left_bottom textarea{
+    width:calc(100% - 2px);
+    height:calc(100% - 2px);
+    resize: none;
+    border: 1px solid #000;
+    border-bottom:none;
+    border-left: none;
+    outline: none;
+}
+#left_bottom input{
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+#close_btn{
+    position: absolute;
+    right:0;
+    top:-20px;
+}

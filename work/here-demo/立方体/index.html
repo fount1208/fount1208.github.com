@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>立方体</title>
+	<style>
+		body{
+			background:#000;
+		}
+	    h1{
+	    	position: absolute;
+	    	top: 30px;
+	    	left: 50px;
+	    	color: #fff;
+	    }
+		.box{width: 200px;
+			 height: 200px;
+			transform:perspective(800px)  rotateY(-60deg)  rotateX(30deg);
+			transform-style: preserve-3d;
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 200px;
+			margin:150px auto;
+			}
+		.box div{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.forward{
+			transform: translateZ(100px);
+			background: rgba(205,45,89,0.5)
+		}
+		.after{
+			transform: translateZ(-100px);
+		}
+		.left{
+			transform: translateX(-100px) rotateY(90deg);
+		}
+		.right{
+			transform:  translateX(100px) rotateY(90deg);
+		}
+		.top{
+			transform:translateY(100px) rotateX(90deg);
+		}
+		.bottom{
+			transform:translateY(-100px) rotateX(-90deg);
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var oBox=document.querySelector('.box');
+			
+			var bLeft=false;
+			var bRight=false;
+			var bUp=false;
+			var bDown=false;
+			
+			var x=70;
+			var y=-65;
+
+			document.onkeydown=function(ev){
+				switch (ev.keyCode)
+				{
+					case 37:
+						bLeft=true;
+						break;
+						
+					case 38:
+						bUp=true;
+						break;
+					
+					case 39:
+						bRight=true;
+						break;
+						
+					case 40:
+						bDown=true;
+						break;
+				}	
+			};
+			document.onkeyup=function(ev){
+				switch (ev.keyCode)
+				{
+					case 37:
+						bLeft=false;
+						break;
+						
+					case 38:
+						bUp=false;
+						break;
+					
+					case 39:
+						bRight=false;
+						break;
+						
+					case 40:
+						bDown=false;
+						break;
+				}	
+			};
+			
+			//连续不断的走
+			setInterval(function(){
+				if(bLeft)
+				{
+					y-=10;	
+				}
+				if(bUp)
+				{
+					x+=10;	
+				}	
+				if(bRight)
+				{
+					y+=10;	
+				}	
+				if(bDown)
+				{
+					x-=10;	
+				}	
+				oBox.style.transform='perspective(800px) rotateX('+x+'deg)  rotateY('+y+'deg)';	
+			},30);
+		};
+	</script>
+</head>
+<body>
+	<h1>请按键盘上下左右键</h1>
+	<div class="box">
+		<div class="forward">1</div>
+		<div class="after" style="background: #399;">2</div>
+		<div class="left" style="background: #88ffb1">3</div>
+		<div class="right" style="background: #833899">4</div>
+		<div class="top" style="background: #6384ff">5</div>
+		<div class="bottom" style="background: #996850">6</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* 北京蒙娜丽莎*/
+
+/*头部开始*/
+
+.header{ background: url(../img/bg.png)  repeat-x; }
+.head_top{ width:960px; margin:0  auto;height:120px;}
+.head_top_l { margin-left:75px;}
+.head_top_l   .logo{ margin-bottom:26px;margin-left:10px;}
+.head_top_r{ margin:44px 0  40px   55px;}
+
+
+.bgnav{ background: url(../img/bgnav.png) repeat-x; height:42px;}
+.nav{ width:943px; margin: 0  auto;  padding-left:17px;}
+.nav  li{ float:left; font-size:14px; line-height:42px; background:url(../img/shu.png) no-repeat right center;}
+.nav  li    a{color:#e5d4cb; padding:0 17px;}
+.nav  a:hover{ color:#eeb88c;}
+
+.msg { width:44px; height:24px; display: inline-block; background:#200c06; border-radius: 10px; text-align:center; line-height:24px; margin-top:7px; margin-left:105px;}
+.msg  a{color:#a8805d; }
+
+/*头部结束*/
+
+/*主体开始*/
+.contenter{ background:url(../img/pic02.jpg) repeat-x center 0; height:448px;}
+.contenter  img{ position:fixed; right:0; top:200px;}
+
+.bg{ background:url(../img/bg1.png) repeat-x center 0; height:9px;}
+
+.content{ width:960px; margin:0 auto;}
+.content  .scroll{ text-align:center; margin-bottom: 20px;}
+.content   .scroll   a{ margin-right:10px;}
+
+.service{ margin-bottom:15px;}
+.service_l{ background:url(../img/tu1.jpg) no-repeat; width:335px; height:62px; float:left;}
+.service_m{ background:url(../img/tu2.jpg) no-repeat; width:354px; height:62px; float:left;}
+.service_r{ background:url(../img/tu3.jpg) no-repeat; width:269px; height:62px; float:left;}
+.service  p{ margin-left:78px; float:left;}
+.service  a{ margin-right:10px; margin-top:14px;}
+
+.banner p{ margin:0  -8px  15px  0 ;}
+.banner  img{ margin-right:12px;}
+.banner  a{ float:left;}
+.mt20{ margin-bottom:20px;}
+/*场馆介绍、外景介绍开始*/
+.main1_top{ border-bottom:1px solid #dbdbdb; margin-bottom:16px;}
+.main1_top  h3{ background:url(../img/tot.png) no-repeat; width:215px; height:55px; text-indent:-999em; margin-bottom:-3px;}
+.main1_top  h4{ background:url(../img/tot.png) no-repeat 0 -56px; width:215px; height:55px; text-indent:-999em; margin-bottom:-3px;}
+.main1_top  h5{ background:url(../img/tot.png) no-repeat 0 -110px; width:300px; height:55px; text-indent:-999em; margin-bottom:-3px;}
+.main_top  h3,h4,h5  a{ display:block; height:100%;}
+
+
+
+.main1_top  li{ float:left; border-right:1px solid #ba9bba; margin-top:23px;}
+.main1_top  a{ color:#787878; margin: 0  11px;}
+.main1_top  .last{ border-right:none;}
+.main1_top   a:hover{ color:#BA1911;}
+
+.main1_l{ width:310px; height:498px; position:relative;}
+.bmain{ width:310px; height:498px;}
+.main1_l  p  a{ position:absolute; bottom:0px; right:0; color:#FFF; line-height:40px; font-size:15px; margin-right:10px;}
+.opa{ opacity:0.5; filter:alpha(opacity:50); background:#000; position:absolute; bottom:0; left:0; height:40px; width:310px;}
+.opa1{ opacity:0.5; filter:alpha(opacity:50); background:url(../img/arr_l.gif);width:31px; height:61px; position:absolute; top:205px; left:15px;}
+.opa2{ opacity:0.5; filter:alpha(opacity:50); background:url(../img/arr_r.gif);width:31px; height:61px; position:absolute;top:205px; right:15px;}
+.main1_l  p  a:hover{ color:#BA1911;}
+.opa1:hover{ opacity:10;}
+.opa2:hover{ opacity:10;}
+
+.main1_r{ width:650px; overflow:hidden;}
+.main1_r_m{ border:1px solid #e5e5e5 ;  width:308px; height:240px;margin-left: 15px; margin-bottom:13px;}
+.main1_r_m  .main1_p{ margin:5px  5px  14px;}
+.main1_r_m   a{ color:#787878; margin-left:7px;}
+.ml15{ margin-left:15px; margin-top:-13px;}
+.main1_r_m  a:hover{ color:#C00;}
+.main1_r_m:hover{ background:#e5e5e5;}
+/*场馆介绍、外景介绍结束*/
+/*客片欣赏开始*/
+.list{ width:960px;}
+.main2_down{ margin-right:-22px;}
+.main2{ border: 1px solid #E5E5E5; height:395px;margin-right:13px; margin-bottom:19px;}
+.main2_p{ margin:5px  6px  7px;}
+.main2_r_m  p {margin-bottom:10px;}
+.main2_r_m  p  a{ color:#787878; margin-left:7px; }
+/*客片欣赏结束*/
+
+/*服务报价开始*/
+.main3_top{border-bottom:1px solid #dbdbdb; margin-bottom:16px;}
+.main3_top  h6{ background:url(../img/tot.png) no-repeat 0 -168px; width:215px; height:55px; text-indent:-999em; margin-bottom:-3px;}
+.main3_top  h6  a{ display:block; height:100%; }
+.main3_top   p{margin-top:25px; margin-right:7px;}
+.main3_top  a{color:#787878; }
+.main3_top   a:hover{ color:#BA1911;}
+.main3_middle  .cont_l{ width:308px; height:236px;border: 1px solid #E5E5E5; margin-right:10px; }
+.cont_l_p{ margin:5px  -3px   14px;}
+.cont_l  a{ color:#787878; margin-left:7px;}
+.cont_l  span{ color:#ba1911; font-size:15px; font-weight:bold; margin-right:10px;}
+.cont_r{ line-height:24px; width:628px; margin-left:8px; height:260px;}
+.cont_r  h2{ font-weight:bold; font-size:16px;color: #3C2112;}
+.cont_r  p{ font-size:14px;color: #3C2112; }
+.cont_r  .introduce{ text-align:right;}
+.cont_r  a:hover{ color:#BA1911;}
+/*服务报价结束*/
+/*积分商城开始*/
+.main4{ width:960px;}
+.main4_top{ border-bottom:1px solid #dbdbdb;}
+.main4_top  h2{ background:url(../img/tot.png) no-repeat 0 -235px; width:95px; height:33px; text-indent:-999px; float:left; margin-bottom:-4px; margin-right:395px;}
+.main4_top  h3{ background:url(../img/tot.png) no-repeat 0 -273px; width:79px; height:33px; text-indent:-999px; float:left;margin-bottom:-4px; margin-right:164px;}
+.main4_top  h4{ background:url(../img/tot.png) no-repeat 0   -313px; width:97px; height:33px; text-indent:-999px; float:left;margin-bottom:-4px;}
+.main4_top h2  a,.main4_top h3  a,.main4_top h4  a{ display:block; height:100%;}
+.main4_b{ margin-bottom:20px;}
+.main4_l{ width:489px;}
+.product{ margin-right:3px;}
+.main4_l   li{ width:150px; height:135px; border:1px solid #e5e5e5; margin:19px  10px 0   0; float:left;}
+.main4_l  img{padding:4px;}
+.main4_l   p{ line-height: 16px;
+padding-top: 4px; margin-left:5px;}
+.main4_l   a{ color:#787878;}
+.product  a:hover{ color:#BA1911;}
+.main4_m{ width:205px; height:255px; border:1px solid #e5e5e5; margin:19px 15px 0  0; padding:15px  5px 5px 10px;}
+.main4_m_t  h6{ background:
+url(../img/tutu.jpg) no-repeat; width:50px; height:50px; float:left; text-indent:-999em;}
+.main4_m_t  a { display:block; height:100%;}
+.main4_m_t_l{ margin-left:10px;}
+.main4_m_t_l  p  em{ background:url(../img/v.png) no-repeat right ; width:16px; height:13px; display:block; float:right;}
+.main4_m_t_l  p   a{ color:#5093d5; float:left;}
+.main4_m_t_l  i{ display:block; width:61px; height:22px; border:1px solid #ea192d; background:#fb4955; text-align:center; line-height:22px; margin-top:14px;}
+.main4_m_t_l  i   a{ color:#FFF;}
+.main4_m_m{ margin:20px 0  14px 0;}
+.main4_m_d_d  ul{ margin-top:14px; margin-left:7px;}
+.main4_m_d  a{ color:#5093d5; padding-right:1px;}
+.main4_m_d_d  li{ width:50px; height:68px; margin-right:16px; float:left;}
+.main4_m_d_d   p{ margin-top:6px; margin-left:1px;}
+.main4_r ul{ margin-top:10px;}
+.main4_r li  a{ color:#787878; line-height:30px; }
+.main4_r li  a:hover{color:#BA1911;}
+/*积分商城结束*/
+/*友情链接开始*/
+.main3_top  h2{ background:url(../img/tot.png) no-repeat 0 -345px; width:141px; height:50px; text-indent:-999em; margin-bottom:-3px;}
+.main3_top  h2  a{ display:block; height:100%; }
+.link  a{ color:#a9471d; margin-right:26px; line-height:24px;}
+.link  a:hover{color:#BA1911;}
+/*友情链接结束*/
+/*主体结束*/
+
+/*尾部开始*/
+
+.footer1{ background:url(../img/bg6.png) repeat-x; border-top:1px solid #dddddd; padding-top:20px; padding-bottom:21px;}
+.footer1_top{ width:960px; margin:0 auto;}
+.footer1_top  dl{ width:118px; margin-right:20px;}
+.footer1_top  dd{ color:#787878; border-bottom:1px solid #705c51; padding-bottom:14px; font-size:14px; margin-bottom:7px;}
+.footer1_top  dt  a{ line-height:25px; color:#787878;}
+.footer1_top  img{ margin-left:15px;}
+.footer1_top  a:hover{color:#BA1911;}
+
+.footer2{ background:#3c2112; padding: 15px 0px 20px;}
+.footer2_top{ width:960px; margin:0 auto;}
+.footer2 p{ color:#FFF; text-align:center; line-height:22px;}
+.footer2 p  a{ color:#FFF;}
+/*尾部结束*/
+
+
+

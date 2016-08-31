@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+.com_Color {
+	width:100%;
+	background:#ebf9ff;
+	height:auto;
+}
+.comWidth_02 {
+	width:1002px;
+	margin:0 auto;
+	overflow:hidden;
+	background:#fff;
+}
+.comWidth_03 {
+	width:1002px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/*顶部切换*/
+.change{ height:48px; overflow:hidden;}
+.change li{ width:249px; height:38px; line-height:38px; display:inline; float:left; font-size:14px; text-align:center; }
+.mr_2{ margin-right:2px;}
+.change li.cyan{ background:#70d9da; width:249px; height:38px; line-height:38px;}
+.change li.blue{ background:#48cfe7; width:249px; height:38px; line-height:38px;}
+.change li.orange{ background:#e67c35; width:249px; height:38px; line-height:38px;}
+.change li.green{ background:#33cd99; width:249px; height:38px; line-height:38px;}
+
+.change li.green a.current{ background:url(../images/changer.gif) no-repeat; width:249px; height:48px; display:block}
+.change li.cyan a.current{ background:url(../images/change02.gif) no-repeat; width:249px; height:48px; display:block}
+.change li.blue a.current{ background:url(../images/change03.gif) no-repeat; width:249px; height:48px; display:block}
+.change li.orange a.current{ background:url(../images/change04.gif) no-repeat; width:249px; height:48px; display:block}
+.change li a{ color:#fff;}
+
+.change_show{ padding:0px 18px; width:966px; overflow:hidden; padding-top:6px;}
+.change_title{ font-size:14px; color:#1aa073; line-height:24px;}
+.yoga_show{ height:144px; padding:16px 0px; width:966px; overflow:hidden}
+.yoga_show img{ width:260px; height:144px; float:left; margin-right:18px;}
+.yoga_info{ width:688px; float:left; overflow:hidden; line-height:30px; font-size:12px; color:#909090; text-indent:2em;}
+/*滚动图片*/
+.img_list{ width:1002px; height:101px; overflow:hidden; margin:0 auto}
+.pre{ width:31px; height:31px; margin-top:35px; left:0; background:url(../images/pre.gif) left center no-repeat; cursor:pointer; float:left;}
+.next{ width:31px; height:31px; margin-top:35px; right:0; background:url(../images/next.gif) right center no-repeat; cursor:pointer; float:right}
+.Cont{ width:900px; height:101px; overflow:hidden; float:left; margin-left:20px; margin-right:20px;}
+.pic{ float:left; display:inline; width:201px; height:101px; margin-right:15px }
+.mb_32{ margin-bottom:32px;}
+.ScrCont {
+width: 20000px;
+height: auto;
+float: left;
+}
+.Cont #List1,.Cont #List2{ float:left;}
+
+/*带有时间的文字列表*/
+.list_time{ float:left; background:#fff; padding-left:20px; padding-right:28px; width:744px; overflow:hidden; margin-right:10px;}
+.list_time ul li{ font-size:12px; height:36px; line-height:36px;}
+.list_time ul li a{ color:#000; text-decoration:none;}
+.list_time ul li span{ float:right; color:#bababa;}
+/* 更多页 */
+.more_list{ width:744px; height:18px; overflow:hidden; text-align:center; background:#fff; padding-bottom:30px; padding-top:32px}
+.more_list a{ height:16px; line-height:16px; background:#fff; color:#4e80cb; border:1px solid #a7b5f3; padding:0 5px; display:inline-block;}
+.more_list a.spe{ border:1px solid #d7d7d7; color:#d7d7d7}
+.more_list a.active{ border:1px solid #342aa4; background:#4f81ce; color:#fff;}
+/* 百科 */
+.baike{ float:right; width:200px; overflow:hidden; background:#fff;}
+.baike_title{ height:38px; line-height:38px; text-align:center; color:#000; background:#d1d1d1}
+.baike_list{ padding:0 17px; width:166px; overflow:hidden; font-size:14px; color:#5b5b5a; line-height:17px; padding-top:17px;}
+.more{ float:right; font-size:14px; color:#35b3e9; padding-right:17px; padding-top:17px; padding-bottom:14px;}
+.pb_60{ padding-bottom:60px;}
+
+

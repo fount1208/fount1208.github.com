@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*base*/
+*{padding:0;margin:0;}
+body{color:#606060; background:#f6f6f6;font-size:12px;}
+a{color:#606060; text-decoration:none;}
+a:hover{color:#606060; text-decoration:underline;}
+li{list-style:none;} 
+img{border:0;}
+.clear{clear:both; height:0px; line-height:0px; overflow:hidden;}
+.left{float:left;}
+.right{float:right;}
+.seo{position:absolute;top:-999999px;}
+.f{ font-family:'微软雅黑','宋体';}
+
+.header{ background:#fff;}
+.h_top{ height:35px; line-height:33px; background:url(../images/h_top.gif) repeat-x top; overflow:hidden;}
+.h_top_c{width:950px; padding:0px 15px; margin:0px auto; color:#9f9f9f;}
+.h_top_c a{color:#9f9f9f;}.h_top_c a:hover{color:#9f9f9f;}
+
+.h_top_1{ height:109px;background:url(../images/h_top_1.gif) repeat-x top; position:relative; z-index:9999;}
+.h_top_1_c{width:980px; margin:0px auto; position:relative;}
+.logo{ position:absolute; top:0px; left:0px;}
+.slong{ font-size:18px;position:absolute; top:30px; left:280px;}
+.weibo{ position:absolute; top:40px; left:450px;}
+.tel{ position:absolute; top:40px; left:580px;}
+.zxyd{ position:absolute; top:20px; right:10px;}
+.zxzx{ position:absolute; top:55px; right:10px;}
+.city{height:27px;position:absolute;top:60px;left:280px;}
+.city ul li{float:left;line-height:27px;}
+.city ul li.city_l{width:6px;height:27px;overflow:hidden;background:url(../images/city_bg.jpg) no-repeat 0px 0px;}
+.city ul li.city_m{padding:0px 15px;height:27px;overflow:hidden;font-size:12px;color:#686868;font-weight:bold;background:url(../images/city_bg.jpg) no-repeat -6px 0px;}
+.city ul li.city_r{width:27px;height:27px;overflow:hidden;cursor:pointer;background:url(../images/city_bg.jpg) no-repeat -155px 0px;}
+.city_c{width:315px; border:3px #ccc solid;padding:10px;overflow:hidden;background:#fff;position:absolute;top:33px;left:-10px;}
+.city_c ul li{border-bottom:1px #c1c1c1 dashed;padding-bottom:5px;margin-bottom:10px;overflow:hidden;}
+.city_c ul li .city_c_l{width:65px;font-weight:bold;}
+.city_c ul li .city_c_r{width:240px;}
+.city_c ul li .city_c_r p{float:left;margin-right:10px;white-space:nowrap;}
+.city_c ul li .city_c_r p a:hover{color:#0885c2;}
+.city_c .more{ text-align:right;}
+.city_c .more a{color:#0885c2;}.city_c .more a:hover{color:#0885c2;}
+.jiantou{width:8px;height:4px;position:absolute;top:29px;left:30px;background:url(../images/city_bg.jpg) no-repeat 0px -27px;}
+
+.nav{ height:60px; line-height:60px; font-size:16px; background:url(../images/nav_bg.jpg) repeat-x; overflow:hidden;}
+.nav_c{ width:980px; margin:0px auto; position:relative; overflow:hidden;}
+.nav_c ul{ width:1000px;}
+.nav_c ul li{ width:108px; float:left; color:#fff; text-align:center;}
+.nav_c ul li.hover{ background:url(../images/nav_hover_bg.jpg) no-repeat top center;}
+.nav_c ul li a{ color:#fff;}.nav_c ul li a:hover{ color:#fff;}
+
+.container{ width:960px; padding:10px; background:#fff; margin:0px auto;}
+
+.footer{ width:980px; margin:0px auto; line-height:22px; padding:10px 0px; text-align:center; color:#5a4f49;}
+.footer a{ color:#5a4f49;}
+
+.links_c{ border:1px #d6d3d1 solid; padding:15px 15px 5px; margin-top:-1px;}
+.links_c a{ display:inline-block; margin:0px 10px 10px 0px;}
+
+/*标题*/
+h3.title{ border-bottom:1px #d6d3d1 solid; height:40px;line-height:40px; position:relative;}
+h3.title span{ display:inline-block; padding:0px 10px; line-height:37px; font-size:20px; color:#5a4f49; border-bottom:3px #f08200 solid; position:relative; top:1px; margin-right:15px; cursor:pointer; overflow:hidden;}
+h3.title span.style_1{ display:inline-block; padding:0px 10px; line-height:37px; font-size:16px; color:#5a4f49;position:relative; top:1px; margin-right:15px; cursor:pointer; border-bottom:none; overflow:hidden;}

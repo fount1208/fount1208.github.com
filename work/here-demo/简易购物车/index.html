@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>angular简易购物车</title>
+    <script src="../angular.js"></script>
+    <script>
+        var app=angular.module('app',[]);
+        app.controller('goCar',function($scope){
+            $scope.data=[
+                {name:'铅笔',count:1, price:2},
+                {name:'洗衣机',count:1, price:200},
+                {name:'皮裤子',count:2, price:56},
+                {name:'老干妈',count:10, price:8.9},
+            ];
+            $scope.sum=function(){
+                var res=0;
+                angular.forEach($scope.data,function(value,key){
+                    res+=value.price*value.count;
+                });
+                return res;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="goCar">
+        <dl ng-repeat="item in data">
+            <dd>
+                商品名称：
+                <strong>{{item.name}}</strong>
+            </dd>
+            <dt>
+                <span>商品数量：<input type="number" ng-model="item.count"> </span><br>
+                <span>商品单价:{{item.price|currency:'￥'}}</span>
+                <span>商品总价:{{item.price*item.count|currency:'￥'}}</span>
+            </dt>
+        </dl>
+        <div>总计：{{sum()|currency:'￥'}}</div>
+    </div>
+</body>
+</html>

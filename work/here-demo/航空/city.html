@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>飞机</title>
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/showMenu.js"></script>
+<script type="text/javascript" src="script/mouseSelect.js"></script>
+<link href="style/common.css" rel="stylesheet" type="text/css" /><!--整体公共CSS-->
+<link href="style/list_info.css" rel="stylesheet" type="text/css" /><!--列表页最终页公共CSS-->
+<link href="style/city.css" rel="stylesheet" type="text/css" /><!--最终页CSS-->
+<link href="style/page.css" rel="stylesheet" type="text/css" /><!--分页CSS-->
+</head>
+
+<body>
+	<!--公共头部开始-->
+    <div class="header">
+    	<div class="h_top">
+        	<div class="h_top_c">
+            	<div class="h_top_c_l left">宏安天城国际飞行学院实现飞行的梦想!</div>
+                <div class="h_top_c_r right">
+                	<a href="#" title="" target="_blank">收藏本站</a> | 
+                    <a href="#" title="" target="_blank">集团微博</a> | 
+                    <a href="#" title="" target="_blank">集团博客</a> | 
+                    <a href="#" title="" target="_blank">联系我们</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="h_top_1">
+        	<div class="h_top_1_c">
+            	<div class="logo">
+                	<a href="#" title=""><img src="images/logo.jpg" alt="" width="262" height="109" /></a>
+                </div>
+                <div class="slong f">北京分公司</div>
+                <!--城市开始-->
+				<div class="city">
+					<ul>
+						<li class="city_l"></li>
+						<li class="city_m">
+							北京
+						</li>
+						<li class="city_r"></li>
+					</ul>
+					<div class="clear"></div>
+					<div class="city_show" style="display:none;">
+						<div class="jiantou"></div>
+						<div class="city_c_bg"></div>
+						<div class="city_c">
+							<ul>
+								<li>
+									<div class="city_c_l left">
+										华北东北：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="北京" title="">北京</a></p>
+										<p><a href="天津" title="">天津</a></p>
+										<p><a href="沈阳" title="">沈阳</a></p>
+										<p><a href="大连" title="">大连</a></p>
+										<p><a href="长春" title="">长春</a></p>
+										<p><a href="哈尔滨" title="">哈尔滨</a></p>
+										<p><a href="石家庄" title="">石家庄</a></p>
+										<p><a href="太原" title="">太原</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										华东地区：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="上海" title="">上海</a></p>
+										<p><a href="杭州" title="">杭州</a></p>
+										<p><a href="南京" title="">南京</a></p>
+										<p><a href="苏州" title="">苏州</a></p>
+										<p><a href="无锡" title="">无锡</a></p>
+										<p><a href="常州" title="">常州</a></p>
+										<p><a href="济南" title="">济南</a></p>
+										<p><a href="厦门" title="">厦门</a></p>
+										<p><a href="宁波" title="">宁波</a></p>
+										<p><a href="福州" title="">福州</a></p>
+										<p><a href="青岛" title="">青岛</a></p>
+										<p><a href="合肥" title="">合肥</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										中部西部：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="武汉" title="">武汉</a></p>
+										<p><a href="郑州" title="">郑州</a></p>
+										<p><a href="长沙" title="">长沙</a></p>
+										<p><a href="南昌" title="">南昌</a></p>
+										<p><a href="成都" title="">成都</a></p>
+										<p><a href="重庆" title="">重庆</a></p>
+										<p><a href="西安" title="">西安</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										华南地区：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="广州" title="">广州</a></p>
+										<p><a href="深圳" title="">深圳</a></p>
+										<p><a href="东莞" title="">东莞</a></p>
+										<p><a href="佛山" title="">佛山</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="#" title="" >更多城市>></a>
+							</div>
+						</div>
+					</div>
+				</div>
+                <script type="text/javascript">
+                	$(".city .city_r").showMenu(".city_show");
+                </script>
+				<!--城市结束-->
+                <div class="weibo"><a href="#" title="" target="_blank"><img src="images/weibo.jpg" alt="" width="132" height="53"/></a></div>
+                <div class="tel"><img src="images/tel.jpg" alt="" width="259" height="53"/></div>
+                <div class="zxyd"><a href="#" title="" target="_blank"><img src="images/zxyd.jpg" /></a></div>
+                <div class="zxzx"><a href="#" title="" target="_blank"><img src="images/zxzx.jpg" /></a></div>
+            </div>
+        </div>
+        <div class="nav f">
+        	<div class="nav_c">
+            	<ul>
+                	<li class="hover"><a href="#" title="">首页</a></li><!--加hover选中-->
+                    <li><a href="#" title="">HATCH简介</a></li>
+                    <li><a href="#" title="">航校列表</a></li>
+                    <li><a href="#" title="">培训课程</a></li>
+                    <li><a href="#" title="">招商服务</a></li>
+                    <li><a href="#" title="">在线报名</a></li>
+                    <li><a href="#" title="">招商加盟</a></li>
+                    <li><a href="#" title="">联系方式</a></li>
+                    <li><a href="#" title="">新闻</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--公共头部结束-->
+    <!--内容区开始-->
+    <div class="container">
+    	<div class="content">
+        	
+            
+            <ol class="hasallcity"><li id="city-A"><p class="cf"><span class="label"><strong>A</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="as">鞍山</a><a  class="isoffline" href="anshun">安顺</a><a  class="isoffline" href="ab">阿坝</a><a  class="isoffline" href="als">阿拉善</a><a  class="isoffline" href="al">阿里</a><a  class="isoffline" href="ankang">安康</a><a  class="isoffline" href="aks">阿克苏</a><a  class="isoffline" href="anqing">安庆</a><a  class="isoffline" href="alt">阿勒泰</a><a  class="isoffline" href="ay">安阳</a><a  class="isoffline" href="am">澳门</a></span></p></li><li id="city-B"><p class="cf"><span class="label"><strong>B</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="bj">北京</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="bt">包头</a><a  class="isoffline" href="bd">保定</a><a  class="isoffline" href="bazhong">巴中</a><a  class="isoffline" href="bengbu">蚌埠</a><a  class="isoffline" href="by">白银</a><a  class="isoffline" href="bc">白城</a><a  class="isoffline" href="baishan">白山</a><a  class="isoffline" href="bh">北海</a><a  class="isoffline" href="byne">巴彦淖尔</a><a  class="isoffline" href="baoji">宝鸡</a><a  class="isoffline" href="baise">百色</a><a  class="isoffline" href="benxi">本溪</a><a  class="isoffline" href="bs">保山</a><a  class="isoffline" href="bijie">毕节</a><a  class="isoffline" href="betl">博尔塔拉</a><a  class="isoffline" href="bz">滨州</a><a  class="isoffline" href="bozhou">亳州</a><a  class="isoffline" href="baz">巴州</a></span></p></li><li id="city-C"><p class="cf"><span class="label"><strong>C</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="cd">成都</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="cq">重庆</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="cz">常州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="chs">长沙</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="cc">长春</a><a  class="isoffline" href="chifeng">赤峰</a><a  class="isoffline" href="cx">楚雄</a><a  class="isoffline" href="changzhi">长治</a><a  class="isoffline" href="ch">巢湖</a><a  class="isoffline" href="chongzuo">崇左</a><a  class="isoffline" href="chaozhou">潮州</a><a  class="isoffline" href="changji">昌吉</a><a  class="isoffline" href="cangzhou">沧州</a><a  class="isoffline" href="chenzhou">郴州</a><a  class="isoffline" href="changde">常德</a><a  class="isoffline" href="chuzhou">滁州</a><a  class="isoffline" href="cy">朝阳</a><a  class="isoffline" href="changdu">昌都</a><a  class="isoffline" href="chizhou">池州</a><a  class="isoffline" href="chengde">承德</a></span></p></li><li id="city-D"><p class="cf"><span class="label"><strong>D</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="dg">东莞</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="dl">大连</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="dy">东营</a><a  class="isoffline" href="dq">大庆</a><a  class="isoffline" href="dt">大同</a><a  class="isoffline" href="dali">大理</a><a  class="isoffline" href="deyang">德阳</a><a  class="isoffline" href="diqing">迪庆</a><a  class="isoffline" href="dazhou">达州</a><a  class="isoffline" href="dz">德州</a><a  class="isoffline" href="dandong">丹东</a><a  class="isoffline" href="dxal">大兴安岭</a><a  class="isoffline" href="dh">德宏</a><a  class="isoffline" href="dx">定西</a></span></p></li><li id="city-E"><p class="cf"><span class="label"><strong>E</strong></span><span><a  class="isoffline" href="es">恩施</a><a  class="isoffline" href="ez">鄂州</a><a  class="isoffline" href="erds">鄂尔多斯</a></span></p></li><li id="city-F"><p class="cf"><span class="label"><strong>F</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="fz">福州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="fs">佛山</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="fushun">抚顺</a><a  class="isoffline" href="fy">阜阳</a><a  class="isoffline" href="fuz">抚州</a><a  class="isoffline" href="fcg">防城港</a><a  class="isoffline" href="fx">阜新</a></span></p></li><li id="city-G"><p class="cf"><span class="label"><strong>G</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="gz">广州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="gy">贵阳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="gl">桂林</a><a  class="isoffline" href="ganzhou">赣州</a><a  class="isoffline" href="guangyuan">广元</a><a  class="isoffline" href="guoluo">果洛</a><a  class="isoffline" href="guyuan">固原</a><a  class="isoffline" href="gn">甘南</a><a  class="isoffline" href="ganzi">甘孜</a><a  class="isoffline" href="ga">广安</a><a  class="isoffline" href="gg">贵港</a></span></p></li><li id="city-H"><p class="cf"><span class="label"><strong>H</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="hz">杭州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="hrb">哈尔滨</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="hf">合肥</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="hd">邯郸</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="huizhou">惠州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="haikou">海口</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="hu">呼和浩特</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="hy">衡阳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="huzhou">湖州</a><a  class="isoffline" href="huaibei">淮北</a><a  class="isoffline" href="hegang">鹤岗</a><a  class="isoffline" href="haibei">海北</a><a  class="isoffline" href="haidong">海东</a><a  class="isoffline" href="huangnan">黄南</a><a  class="isoffline" href="heze">菏泽</a><a  class="isoffline" href="hnz">海南州</a><a  class="isoffline" href="heihe">黑河</a><a  class="isoffline" href="ht">和田</a><a  class="isoffline" href="hami">哈密</a><a  class="isoffline" href="ha">淮安</a><a  class="isoffline" href="hn">淮南</a><a  class="isoffline" href="huangshan">黄山</a><a  class="isoffline" href="hx">海西</a><a  class="isoffline" href="hezhou">贺州</a><a  class="isoffline" href="hh">怀化</a><a  class="isoffline" href="hc">河池</a><a  class="isoffline" href="hlbe">呼伦贝尔</a><a  class="isoffline" href="hs">衡水</a><a  class="isoffline" href="heyuan">河源</a><a  class="isoffline" href="honghe">红河</a><a  class="isoffline" href="hanzhong">汉中</a><a  class="isoffline" href="hg">黄冈</a><a  class="isoffline" href="hshi">黄石</a><a  class="isoffline" href="hb">鹤壁</a><a  class="isoffline" href="hld">葫芦岛</a></span></p></li><li id="city-J"><p class="cf"><span class="label"><strong>J</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jn">济南</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jining">济宁</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jx">嘉兴</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jh">金华</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jiaozuo">焦作</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jingzhou">荆州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jl">吉林</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jinzhou">锦州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="jm">江门</a><a  class="isoffline" href="jdz">景德镇</a><a  class="isoffline" href="ja">吉安</a><a  class="isoffline" href="jms">佳木斯</a><a  class="isoffline" href="jq">酒泉</a><a  class="isoffline" href="jinchang">金昌</a><a  class="isoffline" href="jixi">鸡西</a><a  class="isoffline" href="jiyuan">济源</a><a  class="isoffline" href="jincheng">晋城</a><a  class="isoffline" href="jy">揭阳</a><a  class="isoffline" href="jz">晋中</a><a  class="isoffline" href="jingmen">荆门</a><a  class="isoffline" href="jj">九江</a></span></p></li><li id="city-K"><p class="cf"><span class="label"><strong>K</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="km">昆明</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="kunshan">昆山</a><a  class="isoffline" href="ks">喀什</a><a  class="isoffline" href="klmy">克拉玛依</a><a  class="isoffline" href="kaifeng">开封</a><a  class="isoffline" href="kz">克州</a></span></p></li><li id="city-L"><p class="cf"><span class="label"><strong>L</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="lz">兰州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="linyi">临沂</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="lyg">连云港</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="lc">聊城</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="linfen">临汾</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="liuzhou">柳州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="luoyang">洛阳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="lf">廊坊</a><a  class="isoffline" href="ly">龙岩</a><a  class="isoffline" href="lps">六盘水</a><a  class="isoffline" href="liangshan">凉山</a><a  class="isoffline" href="la">六安</a><a  class="isoffline" href="lj">丽江</a><a  class="isoffline" href="lincang">临沧</a><a  class="isoffline" href="ln">陇南</a><a  class="isoffline" href="lasa">拉萨</a><a  class="isoffline" href="liaoyuan">辽源</a><a  class="isoffline" href="liaoyang">辽阳</a><a  class="isoffline" href="lw">莱芜</a><a  class="isoffline" href="luohe">漯河</a><a  class="isoffline" href="lvliang">吕梁</a><a  class="isoffline" href="lishui">丽水</a><a  class="isoffline" href="linxia">临夏</a><a  class="isoffline" href="linzhi">林芝</a><a  class="isoffline" href="ld">娄底</a><a  class="isoffline" href="lb">来宾</a><a  class="isoffline" href="luzhou">泸州</a><a  class="isoffline" href="ls">乐山</a></span></p></li><li id="city-M"><p class="cf"><span class="label"><strong>M</strong></span><span><a  class="isoffline" href="mas">马鞍山</a><a  class="isoffline" href="mianyang">绵阳</a><a  class="isoffline" href="mm">茂名</a><a  class="isoffline" href="mdj">牡丹江</a><a  class="isoffline" href="mz">梅州</a><a  class="isoffline" href="ms">眉山</a></span></p></li><li id="city-N"><p class="cf"><span class="label"><strong>N</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="nj">南京</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="nb">宁波</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="nt">南通</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="nn">南宁</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="nc">南昌</a><a  class="isoffline" href="nanchong">南充</a><a  class="isoffline" href="nd">宁德</a><a  class="isoffline" href="scnj">内江</a><a  class="isoffline" href="nujiang">怒江</a><a  class="isoffline" href="np">南平</a><a  class="isoffline" href="ny">南阳</a><a  class="isoffline" href="nq">那曲</a></span></p></li><li id="city-P"><p class="cf"><span class="label"><strong>P</strong></span><span><a  class="isoffline" href="px">萍乡</a><a  class="isoffline" href="pds">平顶山</a><a  class="isoffline" href="pt">莆田</a><a  class="isoffline" href="puyang">濮阳</a><a  class="isoffline" href="panzhihua">攀枝花</a><a  class="isoffline" href="pl">平凉</a><a  class="isoffline" href="pe">普洱</a><a  class="isoffline" href="pj">盘锦</a></span></p></li><li id="city-Q"><p class="cf"><span class="label"><strong>Q</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="qd">青岛</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="qz">泉州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="qhd">秦皇岛</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="qqhr">齐齐哈尔</a><a  class="isoffline" href="qingyang">庆阳</a><a  class="isoffline" href="quzhou">衢州</a><a  class="isoffline" href="qxn">黔西南</a><a  class="isoffline" href="qinzhou">钦州</a><a  class="isoffline" href="qn">黔南</a><a  class="isoffline" href="qj">曲靖</a><a  class="isoffline" href="qdn">黔东南</a><a  class="isoffline" href="qth">七台河</a><a  class="isoffline" href="qingyuan">清远</a></span></p></li><li id="city-R"><p class="cf"><span class="label"><strong>R</strong></span><span><a  class="isoffline" href="rizhao">日照</a><a  class="isoffline" href="rkz">日喀则</a></span></p></li><li id="city-S"><p class="cf"><span class="label"><strong>S</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sh">上海</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sz">深圳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sy">沈阳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="su">苏州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sjz">石家庄</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sx">绍兴</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sd">顺德</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="sanya">三亚</a><a  class="isoffline" href="sg">韶关</a><a  class="isoffline" href="suihua">绥化</a><a  class="isoffline" href="songyuan">松原</a><a  class="isoffline" href="sr">上饶</a><a  class="isoffline" href="shiyan">十堰</a><a  class="isoffline" href="smx">三门峡</a><a  class="isoffline" href="sn">山南</a><a  class="isoffline" href="shaoyang">邵阳</a><a  class="isoffline" href="suining">遂宁</a><a  class="isoffline" href="sq">商丘</a><a  class="isoffline" href="shuozhou">朔州</a><a  class="isoffline" href="suizhou">随州</a><a  class="isoffline" href="sw">汕尾</a><a  class="isoffline" href="sp">四平</a><a  class="isoffline" href="sanx">三峡</a><a  class="isoffline" href="suqian">宿迁</a><a  class="isoffline" href="sm">三明</a><a  class="isoffline" href="szs">石嘴山</a><a  class="isoffline" href="sys">双鸭山</a><a  class="isoffline" href="st">汕头</a><a  class="isoffline" href="suzhousz">宿州</a><a  class="isoffline" href="sl">商洛</a></span></p></li><li id="city-T"><p class="cf"><span class="label"><strong>T</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="tj">天津</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="ty">太原</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="ta">泰安</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="tz">台州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="ts">唐山</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="taizhou">泰州</a><a  class="isoffline" href="tac">塔城</a><a  class="isoffline" href="tongling">铜陵</a><a  class="isoffline" href="tc">铜川</a><a  class="isoffline" href="tb">台北</a><a  class="isoffline" href="tr">铜仁</a><a  class="isoffline" href="tlf">吐鲁番</a><a  class="isoffline" href="tianshui">天水</a><a  class="isoffline" href="tongliao">通辽</a><a  class="isoffline" href="tl">铁岭</a><a  class="isoffline" href="th">通化</a></span></p></li><li id="city-W"><p class="cf"><span class="label"><strong>W</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="wh">武汉</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="wx">无锡</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="wz">温州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="wuhu">芜湖</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="weihai">威海</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="wf">潍坊</a><a  class="isoffline" href="xj">乌鲁木齐</a><a  class="isoffline" href="wuzhou">梧州</a><a  class="isoffline" href="wuzhong">吴忠</a><a  class="isoffline" href="wuwei">武威</a><a  class="isoffline" href="wn">渭南</a><a  class="isoffline" href="wlcb">乌兰察布</a><a  class="isoffline" href="ws">文山</a><a  class="isoffline" href="wuhai">乌海</a></span></p></li><li id="city-X"><p class="cf"><span class="label"><strong>X</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="xa">西安</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="xm">厦门</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="xz">徐州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="xf">襄阳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="xn">西宁</a><a  class="isoffline" href="xiaogan">孝感</a><a  class="isoffline" href="bn">西双版纳</a><a  class="isoffline" href="xinyu">新余</a><a  class="isoffline" href="xiangtan">湘潭</a><a  class="isoffline" href="xlgl">锡林郭勒</a><a  class="isoffline" href="xan">兴安</a><a  class="isoffline" href="xt">邢台</a><a  class="isoffline" href="xx">新乡</a><a  class="isoffline" href="xiangxi">湘西</a><a  class="isoffline" href="xinzhou">忻州</a><a  class="isoffline" href="xianyang">咸阳</a><a  class="isoffline" href="xuancheng">宣城</a><a  class="isoffline" href="hk">香港</a><a  class="isoffline" href="xy">信阳</a><a  class="isoffline" href="xianning">咸宁</a><a  class="isoffline" href="xc">许昌</a></span></p></li><li id="city-Y"><p class="cf"><span class="label"><strong>Y</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yz">扬州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yt">烟台</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yancheng">盐城</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yuncheng">运城</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yiwu">义乌</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yy">岳阳</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="yc">宜昌</a><a  class="isoffline" href="yulin">玉林</a><a  class="isoffline" href="yinchuan">银川</a><a  class="isoffline" href="yingtan">鹰潭</a><a  class="isoffline" href="ya">雅安</a><a  class="isoffline" href="yili">伊犁</a><a  class="isoffline" href="ys">玉树</a><a  class="isoffline" href="yichun">宜春</a><a  class="isoffline" href="yk">营口</a><a  class="isoffline" href="yongzhou">永州</a><a  class="isoffline" href="yb">宜宾</a><a  class="isoffline" href="yiyang">益阳</a><a  class="isoffline" href="yx">玉溪</a><a  class="isoffline" href="yq">阳泉</a><a  class="isoffline" href="yanan">延安</a><a  class="isoffline" href="yl">榆林</a><a  class="isoffline" href="yf">云浮</a><a  class="isoffline" href="yanbian">延边</a><a  class="isoffline" href="yj">阳江</a><a  class="isoffline" href="yich">伊春</a></span></p></li><li id="city-Z"><p class="cf"><span class="label"><strong>Z</strong></span><span><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zz">郑州</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zj">镇江</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zs">中山</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zb">淄博</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zh">珠海</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zunyi">遵义</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zhuzhou">株洲</a><a gaevent="InnerLink|Click|changecity/build" class="isonline" href="zhangzhou">漳州</a><a  class="isoffline" href="zg">自贡</a><a  class="isoffline" href="zhoushan">舟山</a><a  class="isoffline" href="zhanjiang">湛江</a><a  class="isoffline" href="zq">肇庆</a><a  class="isoffline" href="zhangye">张掖</a><a  class="isoffline" href="zt">昭通</a><a  class="isoffline" href="zjj">张家界</a><a  class="isoffline" href="zk">周口</a><a  class="isoffline" href="zmd">驻马店</a><a  class="isoffline" href="zjk">张家口</a><a  class="isoffline" href="zy">资阳</a><a  class="isoffline" href="zw">中卫</a><a  class="isoffline" href="zaozhuang">枣庄</a></span></p></li></ol>
+            
+            
+        </div>
+    	<!--公共友情链接开始-->
+    	<div class="links">
+        	<h3 class="title"><span class="f">友情链接</span></h3>
+            <div class="links_c">
+            	<a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+                <a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+                <a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+            </div>
+        </div>
+        <!--公共友情链接结束-->
+    </div>
+    <!--内容区结束-->
+    <!--公共页脚开始-->
+    <div class="footer">
+    	<div>
+            <a href="#" title="" target="_blank">网站首页</a> | 
+            <a href="#" title="" target="_blank">关于我们</a> | 
+            <a href="#" title="" target="_blank">广告服务</a> | 
+            <a href="#" title="" target="_blank">使用条款</a> | 
+            <a href="#" title="" target="_blank">联系我们</a> | 
+            <a href="#" title="" target="_blank">合作伙伴</a> | 
+            <a href="#" title="" target="_blank">招贤纳士</a> | 
+            <a href="#" title="" target="_blank">用户反馈</a>
+        </div>
+		<div>CopyRight © 2009-2013 宏安天城国际飞行学院</div>
+    </div>
+    <!--公共页脚结束-->
+</body>
+</html>

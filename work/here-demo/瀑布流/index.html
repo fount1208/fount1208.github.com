@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>瀑布流</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{padding:0;margin:0;}
+	div{overflow:hidden;width:966px;margin:0 auto;}
+	ul{width:300px;float:left;border:1px solid red;margin-left:10px;}
+	li{width:300px;background:#ccc;font-size:100px;font-weight:bold;text-align:center;margin-bottom:5px;list-style:none;}
+	p{width:100%;height:50px;font-size:50px;background:#ccc;text-align:center;line-height:50px;display:none;}
+</style>
+<script>
+	window.onload=function  () {
+		var aUl=document.getElementsByTagName('ul');
+		var arr=[];
+		var n=0;
+//		var se=['yellow','blue','#EF1919','#D4B223','#66DF21','#10D15E']
+//		var see=['#CF6F6F','#F11317','#D414BB','#930DD6','#2A51A4','#236660','#496435']
+		var oP=document.getElementById('wb');
+		for (var i = 0; i < aUl.length; i++) {
+			arr.push(aUl[i])
+			};
+		abc()
+		function abc () {
+
+			n++;
+			if(n>5){
+				oP.style.display='block';
+				oP.innerHTML='下一页'
+				return;
+			}
+			for (var i = 0; i < 20; i++) {
+				var oLi=document.createElement('li');
+				oLi.style.height=rnd(100,300)+'px';
+				oLi.innerHTML=i;
+				oLi.style.background=color(0,256);
+				arr.sort(function(ul1,ul2){
+				return ul1.offsetHeight-ul2.offsetHeight;
+				})
+				arr[0].appendChild(oLi);
+			};
+		}
+		function  rnd(n,m) {
+			return Math.floor(Math.random()*(m-n)+n);
+		}
+		
+		window.onscroll=function  () {
+			var top=document.body.scrollTop || document.documentElement.scrollTop;
+			var h=(top+document.documentElement.clientHeight)+200;
+			var hh=document.body.offsetHeight;
+			if(h>=hh){
+				
+				abc()
+			}
+		}
+		oP.onclick=function 	 (){
+			oP.style.display='none';
+			n=4;
+			abc()
+		}
+		function color (n,m) {
+			return 'rgb('+rnd(n,m)+','+rnd(n,m)+','+rnd(n,m)+')';
+		}
+	};
+</script>
+</head>
+<body>
+	<div>
+	    <ul></ul>
+	    <ul></ul>
+	    <ul></ul>
+	</div>
+	<p id="wb"></P>
+</body>
+</html>

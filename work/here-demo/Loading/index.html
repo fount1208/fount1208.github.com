@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Loading效果图</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+    @keyframes move {
+        to{
+            transform:rotate(360deg);
+        }
+    }
+    #div1{
+        width:50px;
+        height:50px;
+        background: #fff;
+        margin: 30px auto;
+
+        box-shadow: 2px 0px 2px red,0 -2px 2px green;
+        border-radius: 50%;
+
+        animation:1s move linear infinite;
+    }
+</style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

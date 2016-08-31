@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 左侧内容栏 */
+.con_fl{ width:676px; overflow:hidden; margin-top:5px; margin-right:18px; float:left}
+.comWidth_01 {
+	width:1002px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.com_Color {
+	width:100%;
+	background:#ebf9ff;
+	height:auto;
+}
+.serch_bg{ height:67px; width:100%; background:#fff; overflow:hidden;}
+.search_box {
+height: 34px;
+width: 626px;
+margin-left: 19px;
+overflow: hidden;
+border: 1px solid #e7e7e7;
+margin-top: 12px;
+}
+.search_txtt {
+color: #e7e7e7;
+font-size: 12px;
+height: 12px;
+padding: 11px 0;
+padding-left: 10px;
+color: #000;
+float: left;
+width: 515px;
+float: left;
+}
+.btn {
+width: 95px;
+height: 34px;
+line-height: 34px;
+color: #fff;
+background: #b6b6b6;
+float: right;
+font-size: 14px;
+text-align: center;
+font-weight: bold;
+}
+
+.content_fl{width:676px; overflow:hidden;}
+.nav_list{ height:35px; line-height:35px; font-size:14px; color:#5592dd; border-bottom:4px solid #ebf9ff; background:#fff; padding-left:19px; padding-right:27px; margin-top:4px;}
+.nav_list li{ float:left; display:inline; margin-right:50px; font-weight:bolder}
+.nav_list li.active{ height:35px; line-height:35px;font-size:14px; border-bottom:4px solid #f1bce3; padding-left:14px; padding-right:14px; color:#000;}
+
+
+.answer_show {
+	margin-top:24px; 
+	margin-left:19px;
+	margin-right:27px;
+	width:630px;
+	overflow:hidden;
+	margin-bottom:50px;
+	background:#fff;
+	
+}
+.img_show{ width:139px; float:left; overflow:hidden; margin-right:17px;}
+.img_show .pic img{ width:139px; height:85px; float:left; margin-bottom:16px;}
+.star{ float:left; display:inline; width:115px; overflow:hidden; height:14px;}
+.star .photo img{ margin-right:1px; width:14px; height:14px; float:left;}
+.score{ height:14px; line-height:14px; float:right; padding-right:5px; font-size:12px; color:#fd76d8; font-weight:bold;}
+.dp_title{ font-size:14px; height:24px; vertical-align:top;}
+.dp_title a{ color:#1a76b0;}
+.fr_inro{ float:left; width:474px; overflow:hidden;}
+.dp_info{ font-size:12px; color:#1e1e1e; height:24px;}
+.dp_link{ height:24px; overflow:hidden; font-size:12px; color:#000;}
+.dp_list{ color:#6bb6e9; margin-right:24px; text-decoration:underline;}
+
+.info_box{ height:100px; overflow:hidden}
+.info_box img{ float:left; margin-left:47px; margin-right:10px;max-width:148px;
+	max-height:120px;
+    height:auto;
+	background-color:#f7f7f7;	
+    zoom:expression( function(e) {
+    if(e.width>e.height) {if (e.width>148) { e.height = e.height*(148 /e.width); e.width=148; }}
+    else {if (e.height>128) { e.width = e.width*(128 /e.height); e.height=128; }}
+    e.style.zoom = '1'; }(this));
+	}
+.answer_box {
+	float:left;
+	width:676px;
+	background:#fff;
+}
+.answer_info {
+	line-height:22px;
+	color:#000;
+	padding-left:48px;
+}
+.answer_info span {
+	color:#5378ad
+}
+.share {
+	height:17px;
+	margin-top:5px;
+	 padding-bottom:14px;
+	 border-bottom:1px solid #FFF;
+}
+.share a {
+	font-size:12px;
+	color:#999;
+	padding-left:10px;
+	margin-right:10px
+}
+.jia{ background:url(../images/jia.gif) left center no-repeat;}
+.pinglun{ background:url(../images/pinglun.gif) left center no-repeat;}
+.love{ background:url(../images/love.gif) left center no-repeat;}
+.fx{ background:url(../images/share.gif) left center no-repeat;}
+.sc{ background:url(../images/shoucang.gif) left center no-repeat}
+.shizi {
+	background:url(../images/shizi.jpg) left center no-repeat
+}
+.message {
+	background:url(../images/message.jpg) left center no-repeat
+}
+.xin {
+	background:url(../images/xin.jpg) left center no-repeat
+}
+.fenxiang {
+	background:url(../images/fenxiang.jpg) left center no-repeat
+}
+.shoucang {
+	background:url(../images/shoucang.jpg) left center no-repeat
+}
+.dot {
+	background:url(../images/dot.jpg) left center no-repeat
+}
+
+/* 更多页 */
+.more_list{ width:676px; height:18px; overflow:hidden; text-align:center; background:#fff; padding-bottom:30px; margin-bottom:100px;}
+.more_list a{ height:16px; line-height:16px; background:#fff; color:#4e80cb; border:1px solid #a7b5f3; padding:0 5px; display:inline-block;}
+.more_list a.spe{ border:1px solid #d7d7d7; color:#d7d7d7}
+.more_list a.active{ border:1px solid #342aa4; background:#4f81ce; color:#fff;}
+
+
+.hot_yoga{ height:70px; line-height:70px; font-size:14px; color:#000;}
+.yoga_box{ width:308px; overflow:hidden; margin-bottom:32px;}
+.yoga_box img{ width:48px; height:62px; float:left; margin-right:8px;}
+.yoga_arti{ float:left; overflow:hidden; width:252px;}
+.yoga_intro{ line-height:18px; font-size:12px; color:#6bb6e9;overflow:hidden; float:left; margin-top:10px;}
+
+
+
+
+
+
+

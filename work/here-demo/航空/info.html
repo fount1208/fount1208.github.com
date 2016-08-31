@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>飞机</title>
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/showMenu.js"></script>
+<script type="text/javascript" src="script/mouseSelect.js"></script>
+<link href="style/common.css" rel="stylesheet" type="text/css" /><!--整体公共CSS-->
+<link href="style/list_info.css" rel="stylesheet" type="text/css" /><!--列表页最终页公共CSS-->
+<link href="style/info.css" rel="stylesheet" type="text/css" /><!--最终页CSS-->
+<link href="style/page.css" rel="stylesheet" type="text/css" /><!--分页CSS-->
+</head>
+
+<body>
+	<!--公共头部开始-->
+    <div class="header">
+    	<div class="h_top">
+        	<div class="h_top_c">
+            	<div class="h_top_c_l left">宏安天城国际飞行学院实现飞行的梦想!</div>
+                <div class="h_top_c_r right">
+                	<a href="#" title="" target="_blank">收藏本站</a> | 
+                    <a href="#" title="" target="_blank">集团微博</a> | 
+                    <a href="#" title="" target="_blank">集团博客</a> | 
+                    <a href="#" title="" target="_blank">联系我们</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="h_top_1">
+        	<div class="h_top_1_c">
+            	<div class="logo">
+                	<a href="#" title=""><img src="images/logo.jpg" alt="" width="262" height="109" /></a>
+                </div>
+                <div class="slong f">北京分公司</div>
+                <!--城市开始-->
+				<div class="city">
+					<ul>
+						<li class="city_l"></li>
+						<li class="city_m">
+							北京
+						</li>
+						<li class="city_r"></li>
+					</ul>
+					<div class="clear"></div>
+					<div class="city_show" style="display:none;">
+						<div class="jiantou"></div>
+						<div class="city_c_bg"></div>
+						<div class="city_c">
+							<ul>
+								<li>
+									<div class="city_c_l left">
+										华北东北：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="北京" title="">北京</a></p>
+										<p><a href="天津" title="">天津</a></p>
+										<p><a href="沈阳" title="">沈阳</a></p>
+										<p><a href="大连" title="">大连</a></p>
+										<p><a href="长春" title="">长春</a></p>
+										<p><a href="哈尔滨" title="">哈尔滨</a></p>
+										<p><a href="石家庄" title="">石家庄</a></p>
+										<p><a href="太原" title="">太原</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										华东地区：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="上海" title="">上海</a></p>
+										<p><a href="杭州" title="">杭州</a></p>
+										<p><a href="南京" title="">南京</a></p>
+										<p><a href="苏州" title="">苏州</a></p>
+										<p><a href="无锡" title="">无锡</a></p>
+										<p><a href="常州" title="">常州</a></p>
+										<p><a href="济南" title="">济南</a></p>
+										<p><a href="厦门" title="">厦门</a></p>
+										<p><a href="宁波" title="">宁波</a></p>
+										<p><a href="福州" title="">福州</a></p>
+										<p><a href="青岛" title="">青岛</a></p>
+										<p><a href="合肥" title="">合肥</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										中部西部：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="武汉" title="">武汉</a></p>
+										<p><a href="郑州" title="">郑州</a></p>
+										<p><a href="长沙" title="">长沙</a></p>
+										<p><a href="南昌" title="">南昌</a></p>
+										<p><a href="成都" title="">成都</a></p>
+										<p><a href="重庆" title="">重庆</a></p>
+										<p><a href="西安" title="">西安</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+								<li>
+									<div class="city_c_l left">
+										华南地区：
+									</div>
+									<div class="city_c_r left">
+										<p><a href="广州" title="">广州</a></p>
+										<p><a href="深圳" title="">深圳</a></p>
+										<p><a href="东莞" title="">东莞</a></p>
+										<p><a href="佛山" title="">佛山</a></p>
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="#" title="" >更多城市>></a>
+							</div>
+						</div>
+					</div>
+				</div>
+                <script type="text/javascript">
+                	$(".city .city_r").showMenu(".city_show");
+                </script>
+				<!--城市结束-->
+                <div class="weibo"><a href="#" title="" target="_blank"><img src="images/weibo.jpg" alt="" width="132" height="53"/></a></div>
+                <div class="tel"><img src="images/tel.jpg" alt="" width="259" height="53"/></div>
+                <div class="zxyd"><a href="#" title="" target="_blank"><img src="images/zxyd.jpg" /></a></div>
+                <div class="zxzx"><a href="#" title="" target="_blank"><img src="images/zxzx.jpg" /></a></div>
+            </div>
+        </div>
+        <div class="nav f">
+        	<div class="nav_c">
+            	<ul>
+                	<li class="hover"><a href="#" title="">首页</a></li><!--加hover选中-->
+                    <li><a href="#" title="">HATCH简介</a></li>
+                    <li><a href="#" title="">航校列表</a></li>
+                    <li><a href="#" title="">培训课程</a></li>
+                    <li><a href="#" title="">招商服务</a></li>
+                    <li><a href="#" title="">在线报名</a></li>
+                    <li><a href="#" title="">招商加盟</a></li>
+                    <li><a href="#" title="">联系方式</a></li>
+                    <li><a href="#" title="">新闻</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--公共头部结束-->
+    <!--内容区开始-->
+    <div class="container">
+    	<div class="t_banner">
+        	<img src="images/pic/pxkc.jpg" alt="" width="960" height="185" />
+        </div>
+    	<div class="content">
+        	<div class="c_l left">
+            	<div class="area">
+                	您当前的位置：<a href="#" title="" target="_blank">首页</a> > 培训课程
+                </div>
+                <div class="c_l_c">
+                	<h1>HATCH简介</h1>
+                    <div class="c_l_c_c">
+                    	英国航空公司(British Airways PLC，简称“英航”)与英国旅游局携手向中国旅客推出一项超低价优惠活动。从2月11日起，只需人民币2950元起就可往返伦敦；再付人民币430元起，便可获得一张往返伦敦与阿伯丁、爱丁堡、格拉斯哥、杰西、曼彻斯特、或纽卡斯尔等6个英国城市之一的机票。
+
+　　英航中国区销售经理夏天介绍说，许多人注意到，很少做广告的英国旅游局和英航近期在中央电视台的4个频道开始了今年的联合广告促销。在经济不景气，航空公司利润大幅下降的环境下，英航花费有限的广告促销资金用于中国市场，表明了公司对中国未来市场前景看好。夏天说，从去年中国市场销售情况以及今年初的春节旅游市场来看，情况非常好，春节黄金周游客赴英国旅游可以用“火热”两字来形容。
+
+　　受英镑贬值的影响，购物成为赴英游客首选旅游项目，英国旅游局适时推介了新开业的Westfield London———欧洲最大的市区购物中心和休闲场所。这里有来自超过15个国家的265家豪华、高端消费品的商家在此落户。旅客也可以前往格拉斯哥，去真正实现一个“购物狂”的梦想，这是英国最能满足购物欲的地点之一，整座城市内有不少于5个独立的大型购物区。
+
+　　夏天说，英国有丰厚的历史文化资源，非常适于现今流行的高端深度游。英国旅游局中国区经理钱岗表示：“通过这次特价优惠活动，我们希望中国游客在赴英时不仅享受机票的优惠，而且体验到精彩纷呈的英国。英国旅游资源丰富，深厚的历史文化、独特的传统风俗，秀美的乡村景色，以及充满活力的国际大都会都吸引着世界各地的游客。2009年是尤其激动人心的一年，英国各地将举办丰富多彩的节日和庆祝活动。例如为纪念亨利八世登基500周年(自继承王位算起)，英国伦敦塔和汉普顿宫将会举办别开生面的纪念活动；纪念达尔文诞辰200周年的系列庆祝活动也将陆续展开。”此外，中国斯诺克球迷们将有机会在2009年4至5月间，到英国谢菲尔德举办的世界斯诺克锦标赛上，为他们的偶像丁俊晖助威。
+
+　　喜爱美食的中国游客还可以借助此次英航推出的优惠机票活动深入到英国的各个角落，品尝各种佳肴，可以到农夫市场寻觅地道美食，还可以去阿伯丁的“Grampian美酒佳肴节”搜罗苏格兰的地方风味美食。在海峡群岛还将举行“大泽西美食节”，多位名厨将奉上多款地道英式美食。
+
+　　英国航空公司大中华及菲律宾区总经理佟万里表示：“英国航空公司与英国旅游局的此次合作将带领旅客领略英国的方方面面。我们非常高兴能为中国的旅客提供这一超值优惠，令他们可以从中受益。搭乘英国航空公司航班的旅客，不仅能够体验到我们屡获殊荣的机上服务，更能够享受到功能全面、技术先进的第5航站楼，这一英航独享的新家。”据悉，伦敦希思罗第5航站楼为英航独家使用，因此，其机场服务快捷舒适，国际旅客出入关，平均每人用时仅5至7分钟。 英国航空公司(British Airways PLC，简称“英航”)与英国旅游局携手向中国旅客推出一项超低价优惠活动。从2月11日起，只需人民币2950元起就可往返伦敦；再付人民币430元起，便可获得一张往返伦敦与阿伯丁、爱丁堡、格拉斯哥、杰西、曼彻斯特、或纽卡斯尔等6个英国城市之一的机票。
+
+　　英航中国区销售经理夏天介绍说，许多人注意到，很少做广告的英国旅游局和英航近期在中央电视台的4个频道开始了今年的联合广告促销。在经济不景气，航空公司利润大幅下降的环境下，英航花费有限的广告促销资金用于中国市场，表明了公司对中国未来市场前景看好。夏天说，从去年中国市场销售情况以及今年初的春节旅游市场来看，情况非常好，春节黄金周游客赴英国旅游可以用“火热”两字来形容。
+
+　　受英镑贬值的影响，购物成为赴英游客首选旅游项目，英国旅游局适时推介了新开业的Westfield London———欧洲最大的市区购物中心和休闲场所。这里有来自超过15个国家的265家豪华、高端消费品的商家在此落户。旅客也可以前往格拉斯哥，去真正实现一个“购物狂”的梦想，这是英国最能满足购物欲的地点之一，整座城市内有不少于5个独立的大型购物区。
+
+　　夏天说，英国有丰厚的历史文化资源，非常适于现今流行的高端深度游。英国旅游局中国区经理钱岗表示：“通过这次特价优惠活动，我们希望中国游客在赴英时不仅享受机票的优惠，而且体验到精彩纷呈的英国。英国旅游资源丰富，深厚的历史文化、独特的传统风俗，秀美的乡村景色，以及充满活力的国际大都会都吸引着世界各地的游客。2009年是尤其激动人心的一年，英国各地将举办丰富多彩的节日和庆祝活动。例如为纪念亨利八世登基500周年(自继承王位算起)，英国伦敦塔和汉普顿宫将会举办别开生面的纪念活动；纪念达尔文诞辰200周年的系列庆祝活动也将陆续展开。”此外，中国斯诺克球迷们将有机会在2009年4至5月间，到英国谢菲尔德举办的世界斯诺克锦标赛上，为他们的偶像丁俊晖助威。
+
+　　喜爱美食的中国游客还可以借助此次英航推出的优惠机票活动深入到英国的各个角落，品尝各种佳肴，可以到农夫市场寻觅地道美食，还可以去阿伯丁的“Grampian美酒佳肴节”搜罗苏格兰的地方风味美食。在海峡群岛还将举行“大泽西美食节”，多位名厨将奉上多款地道英式美食。
+
+　　英国航空公司大中华及菲律宾区总经理佟万里表示：“英国航空公司与英国旅游局的此次合作将带领旅客领略英国的方方面面。我们非常高兴能为中国的旅客提供这一超值优惠，令他们可以从中受益。搭乘英国航空公司航班的旅客，不仅能够体验到我们屡获殊荣的机上服务，更能够享受到功能全面、技术先进的第5航站楼，这一英航独享的新家。”据悉，伦敦希思罗第5航站楼为英航独家使用，因此，其机场服务快捷舒适，国际旅客出入关，平均每人用时仅5至7分钟。 
+                    </div>
+                </div>
+            </div>
+            <div class="c_r right">
+            	<!--条件开始-->
+                <div class="tj">
+                    <h3 class="title"><span class="f">报名条件</span></h3>
+                    <div class="tj_c">
+                        <ul>
+                            <li>
+                                <h6 class="f">私人飞行驾照</h6>
+                                <p class="clear"></p>
+                                <p>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提至64架此架新飞机的加盟航提...<a href="#" title="" target="_blank">查看详情>></a></p>
+                            </li>
+                            <li>
+                                <h6 class="f">商业飞行驾照</h6>
+                                <p class="clear"></p>
+                                <p>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提至64架此架新飞机的加盟航提...<a href="#" title="" target="_blank">查看详情>></a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--条件结束-->
+                <!--学员风采开始-->
+                <div class="xy">
+                	<h3 class="title"><span class="f">学员风采</span></h3>
+                    <div class="xy_c">
+                        <ul>
+                            <li>
+                                <p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="135" height="85" /></a></p>
+                                <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="135" height="85" /></a></p>
+                                <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="135" height="85" /></a></p>
+                                <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                            </li>
+                            <li>
+                                <p><a href="#" title="" target="_blank"><img src="images/pic/pic_3.jpg" alt="" width="135" height="85" /></a></p>
+                                <p><a href="#" title="" target="_blank">宏安天城国际</a></p>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!--学员风采结束-->
+                <!--服务承诺开始-->
+                <div class="cn">
+                    <h3 class="title"><span class="f">服务承诺</span></h3>
+                    <div class="cn_c">
+                        <ul>
+                            <li>
+                                <p class="style_1">
+                                    <span class="f"><strong>100%</strong><br/><strong style="font-size:18px;">保证毕业</strong></span><br/>
+                                    毕不了业全额退款
+                                </p>
+                                <p class="style_2"><span>说明：</span>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                            </li>
+                            <li>
+                                <p class="style_1">
+                                    <span class="f"><strong>100%</strong><br/><strong style="font-size:18px;">保证推荐工作</strong></span><br/>
+                                    推荐不了全额退款
+                                </p>
+                                <p class="style_2"><span>说明：</span>宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!--服务承诺结束-->
+                <!--加盟开始-->
+                <div class="jm">
+                	<h3 class="title"><span class="f">招商加盟</span></h3>
+                    <div class="jm_c">
+                        <p><a href="#" title="" target="_blank"><img src="images/pic/pic_6.jpg" alt="" width="290" height="120" /></a></p>
+                        <p class="style_2">宏安天城国际飞行学院本年度引进的第三架新飞机B-5726号成功飞抵济南加盟山航，机队总数增至64架此架新飞机的加盟将为夏秋航季新开航线提...</p>
+                        <p class="style_3"><a href="#" title="" target="_blank">更多信息>></a></p>
+                    </div>
+                </div>
+                <!--加盟结束-->
+            </div>
+            <div class="clear"></div>
+        </div>
+    	<!--公共友情链接开始-->
+    	<div class="links">
+        	<h3 class="title"><span class="f">友情链接</span></h3>
+            <div class="links_c">
+            	<a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+                <a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+                <a href="#" title="" target="_blank">昆明中国国际旅行社</a>
+                <a href="#" title="" target="_blank">通航飞行论坛</a>             
+                <a href="#" title="" target="_blank">航空在线</a>             
+                <a href="#" title="" target="_blank">旅易网</a>                
+                <a href="#" title="" target="_blank">丽江国旅</a>            
+                <a href="#" title="" target="_blank">中国国际航空体育节</a>         
+                <a href="#" title="" target="_blank">捷一飞行学院</a>  
+            </div>
+        </div>
+        <!--公共友情链接结束-->
+    </div>
+    <!--内容区结束-->
+    <!--公共页脚开始-->
+    <div class="footer">
+    	<div>
+            <a href="#" title="" target="_blank">网站首页</a> | 
+            <a href="#" title="" target="_blank">关于我们</a> | 
+            <a href="#" title="" target="_blank">广告服务</a> | 
+            <a href="#" title="" target="_blank">使用条款</a> | 
+            <a href="#" title="" target="_blank">联系我们</a> | 
+            <a href="#" title="" target="_blank">合作伙伴</a> | 
+            <a href="#" title="" target="_blank">招贤纳士</a> | 
+            <a href="#" title="" target="_blank">用户反馈</a>
+        </div>
+		<div>CopyRight © 2009-2013 宏安天城国际飞行学院</div>
+    </div>
+    <!--公共页脚结束-->
+</body>
+</html>
